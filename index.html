@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Casa de Irmãos</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header>
+    <img src="img/logo-casadeirmaos.jpg" alt="Logo Casa de Irmãos" class="logo">
+    <nav>
+      <ul>
+        <li><a href="#inicio">Início</a></li>
+        <li><a href="#eventos">Eventos</a></li>
+        <li><a href="#campanhas">Campanhas/PIX</a></li>
+        <li><a href="#doacoes">Doações</a></li>
+        <li><a href="#matriculas">Matrículas</a></li>
+        <li><a href="#visao">Visão/Missão</a></li>
+        <li><a href="#projetos">Projetos/Galeria</a></li>
+        <li><a href="#contato">Contato</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section id="inicio">
+      <h1>Bem-vindo à Casa de Irmãos</h1>
+      <p>Transformando vidas através da educação, cultura e solidariedade.</p>
+    </section>
+
+    <section id="eventos">
+      <h2>Eventos</h2>
+      <form id="formEvento">
+        <input type="text" id="tituloEvento" placeholder="Título do evento" required>
+        <input type="date" id="dataEvento" required>
+        <textarea id="descricaoEvento" placeholder="Descrição" required></textarea>
+        <button type="submit">Cadastrar Evento</button>
+      </form>
+      <ul id="listaEventos"></ul>
+    </section>
+
+    <section id="campanhas">
+      <h2>Campanhas e PIX</h2>
+      <form id="formCampanha">
+        <input type="text" id="tituloCampanha" placeholder="Título da campanha" required>
+        <textarea id="descricaoCampanha" placeholder="Descrição" required></textarea>
+        <button type="submit">Cadastrar Campanha</button>
+      </form>
+      <ul id="listaCampanhas"></ul>
+
+      <div id="pixModal" class="modal">
+        <div class="modal-content">
+          <span class="close">&times;</span>
+          <h3>Chave PIX</h3>
+          <p id="pixChave">35992352000155</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="doacoes">
+      <h2>Doações</h2>
+      <form id="formDoacao">
+        <input type="text" id="nomeDoador" placeholder="Seu nome" required>
+        <input type="number" id="valorDoacao" placeholder="Valor" required>
+        <button type="submit">Doar</button>
+      </form>
+      <ul id="listaDoacoes"></ul>
+    </section>
+
+    <section id="matriculas">
+      <h2>Matrículas</h2>
+      <form id="formMatricula">
+        <input type="text" id="nomeAluno" placeholder="Nome do aluno" required>
+        <input type="number" id="idadeAluno" placeholder="Idade" required>
+        <button type="submit">Matricular</button>
+      </form>
+      <ul id="listaMatriculas"></ul>
+    </section>
+
+    <section id="visao">
+      <h2>Visão e Missão</h2>
+      <p><strong>Visão:</strong> Ser referência em apoio a crianças e adolescentes em situação de vulnerabilidade.</p>
+      <p><strong>Missão:</strong> Promover inclusão, educação e cultura, garantindo um futuro melhor para nossas crianças.</p>
+    </section>
+
+    <section id="projetos">
+      <h2>Projetos e Galeria</h2>
+      <div class="galeria">
+        <img src="projeto1.jpg" alt="Projeto 1">
+        <img src="projeto2.jpg" alt="Projeto 2">
+        <img src="projeto3.jpg" alt="Projeto 3">
+      </div>
+    </section>
+
+    <section id="contato">
+      <h2>Contato</h2>
+      <p>Email: contato@casadeirmaos.org</p>
+      <p>Telefone: (11) 99999-9999</p>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Casa de Irmãos - Todos os direitos reservados.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
