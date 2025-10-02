@@ -199,3 +199,63 @@ footer {
     grid-template-columns: 1fr;
   }
 }
+
+#eventos {
+  padding: 40px;
+  background: #f7f7f7;
+}
+
+#eventos h2 {
+  font-size: 28px;
+  margin-bottom: 20px;
+  border-bottom: 2px solid #ddd;
+  display: inline-block;
+  padding-bottom: 5px;
+}
+
+.eventos-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.evento-card {
+  background: #fff;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  transition: transform 0.2s;
+}
+
+.evento-card:hover {
+  transform: translateY(-5px);
+}
+
+.evento-img img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+}
+
+.evento-content {
+  padding: 15px;
+}
+
+.evento-content h3 {
+  font-size: 18px;
+  margin: 0 0 10px;
+  color: #333;
+}
+
+.evento-content p {
+  font-size: 14px;
+  color: #666;
+  margin-bottom: 10px;
+}
+
+.evento-data {
+  font-size: 12px;
+  color: #ff6600;
+  display: block;
+}
+
